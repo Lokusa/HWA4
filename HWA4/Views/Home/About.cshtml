@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .margin {
+            margin-bottom: 45px;
+        }
+
+        .bg-1 {
+            background-color: #FF00FF;
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #00FFFF;
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff; /* White */
+            color: #555555;
+        }
+
+        .bg-4 {
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">About Us</h3>
+        <img src="~/Content/logo.jpg" class="img-responsive img-circle margin" style="display:inline" alt="logo" width="350" height="350">
+        <h3>Edu8 South Africa NPO</h3>
+
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center">
+        <h3 class="margin">Who are we</h3>
+        <p> We are a none profit organization focusing on the fourth sustainbale development goal. we believe that education is the key to success,we strive to offer equal and quality education for all by 2030.Our classes have well trained teachers of which we teah leaners form grade 7 to 12 math,sience and technology.Our lessons are online and are on thursday to sundays.  </p>
+
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">What we offer </h3><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p>We offer technology classes for only once a week which is on thursday only from 17:00 to  18:00.It is catered for garde 7 to 8 only as this is just basic computer litracy class.</p>
+                <img src="~/Content/tech.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+
+            </div>
+            <div class="col-sm-4">
+                <p>Our physical Science classes are for leaners in grade 10 to 12. We offer them on weekends that is satdays and sundays from 09:00 to 12:00</p>
+                <img src="~/Content/physics.jpg" /> 
+            </div>
+            <div class="col-sm-4">
+                <p>Our mathematics classes are for leaners in grade 10 to 12. We offer them on weekends that is satdays and sundays from 09:00 to 12:00</p>
+                <img src="/Content/math.jpg" style="width:100%" alt="Image">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

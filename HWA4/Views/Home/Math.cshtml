@@ -1,0 +1,62 @@
+﻿
+<style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: green 2px solid;
+        border-radius: 5px;
+        margin: 50px 300px 50px 300px;
+        padding: 20px;
+    }
+</style>
+<div class="center">
+    @using (Html.BeginForm("Math", "Home", FormMethod.Post))
+    {
+        <form>
+            <H3 style="color:green">Math</H3>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text "> <i class="fa fa-user"></i> </span>
+                </div>
+                <input name="SubjectName" class="form-control" placeholder="Subject Name" type="text">
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <input name="Num_Repeating_Students" class="form-control" placeholder="Number of Repeater" type="number">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
+                </div>
+
+                <input name="New_Students_Num" class="form-control" placeholder="Number of Students" type="number">
+            </div> <!-- form-group// -->
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <select class="form-control" name="Study_Unit">
+                    <option value="None">Study Unit</option>
+                    <option value="Algebra">SUT1:Algebra</option>
+                    <option value="FinacialMath">SUT2:FinacialMath</option>
+                    <option value="Trigonometry">SUT3:Trigonometry</option>
+                </select>
+            </div> <!-- form-group end.// -->
+
+            
+            <!-- form-group// -->
+
+            <input type="submit" class="btn btn-success" value="Submit" />
+        </form>
+    }
+
+
+</div>
